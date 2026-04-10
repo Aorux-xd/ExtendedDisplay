@@ -1,0 +1,16 @@
+# Cache refresh period in seconds
+update-interval: 2
+
+# Proxy response timeout in milliseconds
+proxy-timeout: 1000
+
+# Enable verbose debug logging
+debug: false
+
+# Direct SLP timeout in milliseconds (used when no online players on this server)
+slp-timeout: 1000
+
+# Optional direct ping targets when no player carrier is available.
+# Server names are discovered from Velocity list_all (velocity.toml via Velocity API).
+# Format: serverName: "host:port"
+server-addresses: {}

@@ -1,0 +1,16 @@
+name: EDExpansion
+version: 1.0
+main: com.extendeddisplay.purpur.EDExpansionPlugin
+api-version: "1.20"
+author: ExtendedDisplay
+softdepend:
+  - PlaceholderAPI
+commands:
+  eddebug:
+    description: Toggle EDExpansion debug logging
+    usage: /eddebug <true|false>
+    permission: edexpansion.debug
+permissions:
+  edexpansion.debug:
+    description: Allows toggling EDExpansion debug mode
+    default: op
