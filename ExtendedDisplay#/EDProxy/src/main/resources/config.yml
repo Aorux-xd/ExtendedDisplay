@@ -1,0 +1,9 @@
+# Status cache TTL in seconds
+cache-ttl: 1
+
+# Enable debug logging
+debug: false
+
+# Servers excluded from responses
+blacklisted-servers:
+  - "auth"
