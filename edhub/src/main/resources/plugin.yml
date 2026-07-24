@@ -1,0 +1,19 @@
+name: EdHUB
+version: ${project.version}
+main: dev.ed.edhub.EdHUBPlugin
+api-version: '1.21'
+authors: HELOUNN
+depend:
+  - EDCore
+commands:
+  spawn:
+    description: Телепорт на hub-spawn
+    permission: edhub.spawn
+  hub:
+    description: Управление EdHUB
+    permission: edhub.admin
+permissions:
+  edhub.spawn:
+    default: true
+  edhub.admin:
+    default: op

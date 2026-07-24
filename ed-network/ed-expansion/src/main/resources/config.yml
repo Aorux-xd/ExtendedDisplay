@@ -1,0 +1,14 @@
+# EDExpansion кэш от EDProxy и fallback SLP
+
+# TTL данных от прокси (секунды)
+cache-ttl-seconds: 5
+
+# Таймаут прямого SLP (миллисекунды)
+slp-timeout-millis: 1500
+
+# Адреса backend для fallback host:port (имя как в velocity.toml)
+# Пример:
+# servers:
+#   lobby: "127.0.0.1:25565"
+#   survival: "192.168.1.10:25566"
+servers: {}

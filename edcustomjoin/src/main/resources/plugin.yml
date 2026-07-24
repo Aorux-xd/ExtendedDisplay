@@ -1,0 +1,20 @@
+name: EDCustomJoin
+version: ${project.version}
+main: dev.ed.edcustomjoin.EDCustomJoinPlugin
+api-version: '1.21'
+authors:
+  - ED
+description: Кастомные сообщения входа и выхода
+depend:
+  - EDCore
+softdepend:
+  - PlaceholderAPI
+commands:
+  customjoin:
+    description: Управление EDCustomJoin
+    aliases: [cj, edcustomjoin, edcj]
+    permission: edcustomjoin.admin
+    usage: /customjoin reload
+permissions:
+  edcustomjoin.admin:
+    default: op

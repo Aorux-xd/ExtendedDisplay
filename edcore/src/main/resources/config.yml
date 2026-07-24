@@ -1,0 +1,19 @@
+# EDCore 2.0.0 — лицензия и обновления
+
+license:
+  key: ''
+  server-id: ''
+  hardware-id: ''
+  api-base-url: 'https://edcore.vercel.app'
+
+updates:
+  auto-check: true
+  check-interval-hours: 24
+
+messages:
+  license-required: '&#FF4444EDCore: требуется лицензия. Зарегистрируйтесь на edcore.vercel.app'
+  license-waiting: '&#FFAA00EDCore: сервер зарегистрирован. Привяжите ключ в личном кабинете.'
+  license-valid: '&#00FF00EDCore: лицензия подтверждена.'
+  license-invalid: '&#FF4444EDCore: лицензия недействительна.'
+  update-available: '&#00FF00Доступно обновление: %plugin% v%version%'
+  update-installed: '&#00FF00%plugin% обновлён до v%version%. Перезагрузите сервер.'

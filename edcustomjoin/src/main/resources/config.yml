@@ -1,0 +1,17 @@
+enable-join: true
+enable-quit: true
+enable-first-join: true
+
+hide-default: true
+
+# Сообщение при входе
+# Встроенные: %player_name%, %player_displayname%, %player_world%, %online%, %max%
+# + PlaceholderAPI (если установлен): %player_ping%, %vault_prefix%, и т.д.
+join-message: "&#00FF00✔ &7%player_name% &#AAFFAAзашёл на сервер &7(%online%/%max%)"
+
+quit-message: "&#FF4444✖ &7%player_name% &#FFAAAAпокинул сервер &7(%online%/%max%)"
+
+first-join-message: "&#FFD700⭐ &7%player_name% &#FFEE88впервые зашёл на сервер!"
+
+# Задержка перед показом (в тиках)
+delay-ticks: 0

@@ -1,0 +1,10 @@
+name: EDExpansion
+version: ${project.version}
+main: dev.ed.expansion.EdExpansionPlugin
+api-version: '1.21'
+load: POSTWORLD
+authors: HELOUNN
+depend:
+  - EDCore
+softdepend:
+  - PlaceholderAPI

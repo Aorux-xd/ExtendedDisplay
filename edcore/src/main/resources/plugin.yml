@@ -1,0 +1,16 @@
+name: EDCore
+version: ${project.version}
+main: dev.ed.edcore.paper.EDPaperBootstrap
+api-version: '1.21'
+load: STARTUP
+authors:
+  - ED
+commands:
+  edcore:
+    description: Статус лицензии и обновления ED-плагинов
+    usage: /edcore <status|update> [plugin|all]
+    permission: edcore.admin
+permissions:
+  edcore.admin:
+    description: Управление EDCore (статус, обновления)
+    default: op

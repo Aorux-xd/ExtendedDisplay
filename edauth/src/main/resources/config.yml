@@ -1,0 +1,62 @@
+auth:
+  storage: sqlite
+  mysql:
+    host: localhost
+    port: 3306
+    database: edauth
+    user: root
+    password: ''
+  session:
+    enabled: true
+    timeout: 3600
+    strict-ip-binding: true
+    ip-mask: 32
+  premium:
+    enabled: true
+    require-social-link: false
+  brute-force:
+    max-attempts: 5
+    delay: 300
+  virtual-server:
+    enabled: false
+  algorithm: bcrypt
+
+security:
+  bcrypt-max-per-second: 20
+  password-policy:
+    min-length: 6
+    require-uppercase: false
+    require-digit: false
+    require-special-char: false
+    block-common-passwords: true
+    common-passwords-source: file   # builtin | file | url
+    common-passwords-url: ''
+    common-passwords-url-whitelist: []
+    common-passwords-url-max-size-mb: 5
+  rate-limit:
+    enabled: true
+    ip-per-minute: 5
+    nick-per-minute: 10
+    global-ip-threshold: 15
+    global-ip-block-minutes: 10
+    aggregate-subnet: 24
+  premium-protection:
+    allow-in-offline: false
+
+logging:
+  ip-masking: salted-hash
+  audit-log: true
+
+messages:
+  register-success: "&aУспешная регистрация!"
+  login-success: "&aВы вошли!"
+  login-required: "&cПожалуйста, войдите: /login <пароль>"
+  premium-enabled: "&6Премиум-режим активирован."
+  premium-disabled: "&6Премиум-режим отключён."
+
+allowed-commands:
+  - /login
+  - /register
+  - /premium
+  - /crack
+  - /logout

@@ -1,0 +1,10 @@
+# EDProxy сбор статистики backend и рассылка по каналу ed:proxy
+
+# Интервал полного сбора (секунды)
+collect-interval-seconds: 5
+
+# Таймаут ping одного сервера (миллисекунды)
+ping-timeout-millis: 2500
+
+# Логировать каждую рассылку (шумно)
+debug: false

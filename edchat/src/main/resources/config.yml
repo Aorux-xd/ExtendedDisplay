@@ -1,0 +1,43 @@
+default-mode: LOCAL
+local-radius: 100
+
+global-format: "&#55FFFF[G] &#FFFFFF%player_name% &#55FFFF→ &#FFFFFF%message%"
+local-format: "&#AAAAAA[L] &#FFFFFF%player_name% &#AAAAAA→ &#FFFFFF%message%"
+
+global-prefix: "!"
+local-prefix: "?"
+
+me-format: "&#FFAA00* %player_name% %message%"
+
+pm-sent-format: "&#AAAAAA[&#55FFFFВы &#AAAAAA→ &#FFFFFF%target%&#AAAAAA] &#FFFFFF%message%"
+pm-receive-format: "&#AAAAAA[&#55FFFF%player_name% &#AAAAAA→ &#FFFFFFВы&#AAAAAA] &#FFFFFF%message%"
+
+enable-global-world-separator: false
+global-world-separator: " &#AAAAAA[%world%]"
+
+anti-spam:
+  enabled: true
+  max-messages-per-second: 2
+  mute-on-spam: true
+  mute-duration-seconds: 30
+  spam-message: "&#FF4444Не спамь! Подожди немного."
+
+blocked-words:
+  enabled: false
+  list: []
+  replace-with: "***"
+  notify-staff: true
+  notify-message: "&#FF4444⚠ &#FFFFFF%player% &#FF4444попытался написать запрещённое слово: &#FFFF55%words%"
+
+mute:
+  enable-command: true
+  actionbar-notify: true
+  muted-actionbar: "🔇 Вы замьючены администратором"
+  unmuted-actionbar: "🔊 Вас размьютили"
+  chat-blocked-actionbar: "🔇 Вы не можете писать в чат (вы замьючены)"
+
+messages:
+  cannot-msg-self: "&#FF4444Нельзя писать в ЛС самому себе"
+  chat-cleared: "&#FF4444🗑 Чат очищен администратором %admin%"
+  chat-disabled: "&#FF4444🔇 Чат отключён администратором %admin%"
+  chat-enabled: "&#00FF00🔊 Чат включён администратором %admin%"

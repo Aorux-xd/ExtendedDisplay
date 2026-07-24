@@ -1,0 +1,39 @@
+name: EDAuth
+version: ${project.version}
+main: dev.ed.edauth.bootstrap.EDAuthBootstrap
+api-version: '1.21'
+authors: HELOUNN
+depend:
+  - EDCore
+commands:
+  register:
+    aliases: [reg]
+    permission: edauth.register
+  login:
+    aliases: [log, l]
+    permission: edauth.login
+  logout:
+    permission: edauth.logout
+  changepassword:
+    aliases: [cpass, cp]
+    permission: edauth.changepass
+  unregister:
+    permission: edauth.unregister
+  premium:
+    permission: edauth.premium
+  crack:
+    permission: edauth.crack
+  2fa:
+    permission: edauth.2fa
+  auth:
+permissions:
+  edauth.register: { default: true }
+  edauth.login: { default: true }
+  edauth.logout: { default: true }
+  edauth.changepass: { default: true }
+  edauth.unregister: { default: true }
+  edauth.premium: { default: true }
+  edauth.crack: { default: true }
+  edauth.2fa: { default: true }
+  edauth.token: { default: true }
+  edauth.admin: { default: op }

@@ -1,0 +1,41 @@
+name: EDChat
+version: ${project.version}
+main: dev.ed.edchat.EDChatPlugin
+api-version: '1.21'
+authors:
+  - ED
+description: Глобальный и локальный чат с форматированием
+depend:
+  - EDCore
+softdepend:
+  - EDCustomJoin
+  - PlaceholderAPI
+commands:
+  edchat:
+    description: Управление EDChat
+    permission: edchat.admin
+    usage: /edchat reload
+  chat:
+    description: Админ-управление чатом
+    permission: edchat.admin
+  msg:
+    description: Личное сообщение
+    permission: edchat.msg
+    aliases: [tell, w, whisper]
+  reply:
+    description: Ответ на ЛС
+    permission: edchat.msg
+    aliases: [r]
+  me:
+    description: Действие в чате
+    permission: edchat.me
+permissions:
+  edchat.admin:
+    default: op
+  edchat.notify:
+    description: Уведомления о запрещённых словах в чате
+    default: op
+  edchat.msg:
+    default: true
+  edchat.me:
+    default: true

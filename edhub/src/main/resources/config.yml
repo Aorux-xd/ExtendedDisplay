@@ -1,0 +1,85 @@
+world-name: world
+apply-to-all-worlds: false
+
+# Бесконечное здоровье (игрок не получает никакого урона)
+infinity-hp: true
+
+# Бесконечный голод (голод не тратится)
+infinity-hunger: true
+
+# Урон от падения (работает только если infinity-hp: false)
+fall-damage: false
+
+weather:
+  change: false
+  freeze: true
+
+time:
+  cycle: false
+  fixed: DAY
+
+mob-spawn:
+  monsters: false
+  animals: false
+  patrols: false
+  trader: false
+
+biome:
+  freeze-water: false
+
+pvp:
+  enabled: false
+  allow-projectiles: false
+
+default-gamemode: ADVENTURE
+
+spawn-protection:
+  radius: 256
+  center:
+    world: world
+    x: -0.5
+    y: 64.0
+    z: 1.5
+  allow-block-break: false
+  allow-block-place: false
+  allow-pvp: false
+  allow-mob-spawning: false
+
+first-spawn:
+  world: world
+  x: -0.5
+  y: 64.0
+  z: 1.5
+  yaw: 0.0
+  pitch: 0.0
+
+hub-spawn:
+  world: world
+  x: -0.5
+  y: 64.0
+  z: 1.5
+  yaw: 0.0
+  pitch: 0.0
+
+commands:
+  spawn-enabled: true
+
+inventory:
+  clear-on-join: false
+  whitelist-items: []
+
+anti-void-y:
+  enabled: false
+  min-y: -64
+  max-y: 320
+  teleport-to: hub-spawn
+  message: "§cВы телепортированы на спавн."
+
+whitelist-nickname: []
+
+debug: false
+
+# worlds:
+#   world_nether:
+#     pvp:
+#       enabled: true
